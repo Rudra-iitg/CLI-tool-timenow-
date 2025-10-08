@@ -1,8 +1,8 @@
 Metadata-Version: 2.4
 Name: timenow-cli
-Version: 1.0.0
+Version: 1.0.2
 Summary: A simple CLI to get the current time in any city worldwide.
-Author-email: Your Name <your@email.com>
+Author-email: Ninza Panda <ninzaapanda@gmail.com>
 License: MIT
 Project-URL: Homepage, https://github.com/yourusername/timenow-cli
 Project-URL: Repository, https://github.com/yourusername/timenow-cli
@@ -13,6 +13,10 @@ Requires-Dist: requests
 Requires-Dist: pytz
 Dynamic: license-file
 
+<<<<<<< HEAD
+# CLI-tool-timenow-
+A CLI tool that can fetch current time form anywhere in the world.
+=======
 # ⏰ timenow
 
 [![PyPI version](https://img.shields.io/pypi/v/timenow.svg)](https://pypi.org/project/timenow)
@@ -99,3 +103,4 @@ Copyright (c) 2025 Ninza Panda
 
 ⭐ If you like `timenow`, consider giving it a **star** on GitHub and sharing it with your friends!
 
+>>>>>>> ae0b58f (Initial commit: upload timenow CLI tool)

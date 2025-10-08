@@ -123,7 +123,7 @@ def get_timezone_info(lat, lon):
     """Get timezone information for given coordinates."""
     try:
         # First try TimeAPI.io (free, no key required)
-        url = f"https://timeapi.io/api/TimeZone/coordinate?latitude={lat}&longitude={lon}"
+        url = f"https://timeapi.io/api/time/current/coordinate?latitude={lat}&longitude={lon}"
         req = urllib.request.Request(url)
         req.add_header('User-Agent', 'TimeCLI/1.0')
         
@@ -142,7 +142,7 @@ def get_timezone_info(lat, lon):
     
     try:
         # Fallback to TimeZoneDB API
-        url = f"http://api.timezonedb.com/v2.1/get-time-zone?key=demo&format=json&by=position&lat={lat}&lng={lon}"
+        url = f"http://api.timezonedb.com/v2.1/get-time-zone?key=KW0ZEYFBWBYZ&format=json&by=position&lat={lat}&lng={lon}"
         
         with urllib.request.urlopen(url, context=ssl_context, timeout=10) as response:
             data = json.load(response)
